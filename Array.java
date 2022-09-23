@@ -10,8 +10,10 @@ public class Array<T>{
     }
 
     public void add(T item){
+        if(!isFull()){
         arr[size] = item;
         size++;
+        }
     }
 
     public T get(int index){
